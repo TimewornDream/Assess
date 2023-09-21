@@ -4,6 +4,7 @@ var s_btn = document.getElementById("s_button")
 var b_btn = document.getElementById("b_button")
 var h_btn = document.getElementById("h_button")
 var LastInput, tag
+LastInput = ""
 //定义search功能的函数
 function search(){
     var input = document.getElementById("input").value
@@ -30,7 +31,9 @@ window.onkeydown = function(event){
 
 //back按钮点击
 b_btn.onclick = function(){
-    window.open(`https://cn.bing.com/search?q=${LastInput}`)
+    if (LastInput != ""){
+        window.open(`https://cn.bing.com/search?q=${LastInput}`)
+    }
 }
 
 //定义取"南⼤家园"，"云家园"，"家园⼯作室"，"⼩家园传声机"中随机一个标签的函数
@@ -93,5 +96,5 @@ function createHistory(){
 //定义清空历史记录的函数
 function clearHistory(){
     var history = document.getElementById("searchHistory")
-    history.parentNode.removeChild(history)
+    history.replaceChildren()
 }
