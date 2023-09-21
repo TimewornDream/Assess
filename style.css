@@ -1,0 +1,147 @@
+body {
+    background: url(./source/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#time {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 170px;
+}
+
+#timetext {
+    color: white;
+    font-size: 450%;
+    text-align: center;
+}
+
+#date {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+}
+
+#datetext {
+    color: white;
+    font-size: 150%;
+}
+
+#search {
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -380px;
+    width: 760px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#input {
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 600px;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 15px;
+    outline: none;
+}
+
+#s_button {
+    background: url(./source/search.svg);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+#b_button {
+    background: url(./source/undo.svg);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 680px;
+    top: 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+#h_button {
+    background: url(./source/fire.svg);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 720px;
+    top: 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+#searchFound {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 430px;
+    height:40%;
+}
+
+#found {
+    font-size: 14px;
+    color: white;
+}
+
+#Like {
+    position: relative;
+    top: 10px;
+    line-height: 30px;
+}
+
+.found {
+    color: black;
+    font-size: 16px;
+    background-color:lightblue;
+    border-radius: 3px;
+    padding-inline: 8px;
+    height: 25px;
+    border: 0;
+    font-weight: 550;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+#history {
+    font-size: 14px;
+    color: white;
+}
+
+#searchHistory {
+    line-height: 30px;
+}
+
+#clear {
+    position: relative;
+    top: 30px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-decoration-line:underline;
+    cursor: pointer;
+}
+

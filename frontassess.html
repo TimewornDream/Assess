@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>家园工作室研发组前端考核</title>
+</head>
+<body>
+    <div id="time"><span id="timetext"></span></div>
+    <div id="date"><span id="datetext"></span></div>
+    <script src="./time.js"></script>
+    <div id="search">
+        <input type="button" id="s_button" class="button">
+        <input type="text" id="input" placeholder="搜索网页">
+        <input type="button" id="b_button" class="button">
+        <input type="button" id="h_button" class="button">
+        <script src="./buttonPressReaction.js"></script>
+    </div>
+    <div id="searchFound">
+        <span id="found">搜索发现：</span><br>
+        <div id="Like">
+            <button type="button" class="found" onclick="searchFound(0)">南昌大学</button>
+            <button type="button" class="found" onclick="searchFound(1)">家园工作室</button>
+            <button type="button" class="found" onclick="searchFound(2)">云家园</button>
+            <button type="button" class="found" onclick="searchFound(3)">小家园传声机</button>
+            <button type="button" class="found" onclick="searchFound(4)">研发组</button>
+            <button type="button" class="found" onclick="searchFound(5)">哔哩哔哩</button>
+            <button type="button" class="found" onclick="searchFound(6)">周杰伦</button>
+            <button type="button" class="found" onclick="searchFound(7)">交换余生</button>
+            <button type="button" class="found" onclick="searchFound(8)">心墙</button><br>
+            <span id="history">搜索记录：</span>
+        </div>
+        <div id="searchHistory"></div>
+        <button type="button" style="display: block;" id="clear" onclick="clearHistory()">清空所有记录</button>
+    </div>
+</body>
+</html>
